@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  height: max-content;
+  padding: 1% 8.3%;
+}
+
+.brand-logo {
+  width: 125px;
+  height: 40px;
+}
+
+.contact-us {
+  border: 1px solid #f2b304;
+  border-radius: 4px;
+}
