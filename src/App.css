@@ -1,8 +1,11 @@
+.header-container {
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
-  background: #ffffff;
-  border: 1px solid #000000;
+  background-color: #ffffff;
   border-radius: 10px;
   height: max-content;
   padding: 1% 8.3%;
@@ -16,4 +19,122 @@
 .contact-us {
   border: 1px solid #f2b304;
   border-radius: 4px;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 8.3% 0% 8.3%;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.intro-text-container {
+  background: url(./assets/introbackground.svg);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/*#unification to be adressed*/
+.intro-text {
+  margin: 15% 0%;
+}
+
+.intro-pic {
+  height: fit-content;
+}
+
+.intro-pic-coworking{
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+  .intro-container{
+    flex-direction: column-reverse;
+  }
+  .intro-pic-coworking{
+    width: 100%;
+    object-fit: contain;
+    margin-top: 0;
+  }
+}
+
+.why-choose-us {
+  margin-bottom: 5%;
+}
+
+.why-choose-title {
+  margin-bottom: 2.5rem;
+}
+
+.why-choose-content {
+  margin-left: 1%;
+}
+
+.wcu-grid {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 1250px) {
+  .wcu-grid{
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .wcu-grid:nth-child(4n + 1) {
+    border-left: none;
+  }
+
+  .wcu-grid:nth-child(4n) {
+    border-right: none;
+  }
+
+  .wcu-grid:nth-child(-n + 4) {
+    border-top: none;
+  }
+
+  .wcu-grid:nth-child(n + 5) {
+    border-bottom: none;
+  }
+}
+
+.wcu-amenity {
+  text-wrap: nowrap;
+  margin: 12px;
+}
+
+.space-overview {
+  margin-bottom: 5%;
+}
+
+.download-app {
+  margin: 0% 8.3% 0% 8.3%;
+}
+
+.footer {
+  background-color: #222e34;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 0px;
 }

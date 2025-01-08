@@ -1,9 +1,15 @@
-import React from 'react'
+import { Typography } from '@mui/material';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <>
+      <div className="footer">
+        <Typography variant="body1" color="secondary">
+          {`© Copyright ${new Date().getFullYear()}. Bhive Private Limited`}
+        </Typography>
+      </div>
+    </>
+  );
+};
 
 export default Footer;

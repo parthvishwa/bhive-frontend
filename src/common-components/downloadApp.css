@@ -1,0 +1,52 @@
+.download-app{
+  --imgHeight: 25rem;
+  --innerBoxHeight: 17rem;
+}
+
+.download-title {
+  margin-left: 4%;
+  margin-bottom: calc(3% + var(--imgHeight) - var(--innerBoxHeight)); 
+}
+
+.download-app-content {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  margin-bottom: 2rem;
+}
+
+.app-image {
+  height: var(--imgHeight);
+  position: absolute;
+  left: 2.5%;
+  bottom: 0;
+}
+
+.download-app-inner {
+  /* width: 100%; */
+  height: var(--innerBoxHeight);
+  border: 1px solid rgba(238, 231, 231, 0.8);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+}
+
+.download-app-inner-text{
+  padding: 5% 1.5rem 1.5rem 45%;
+}
+
+.download-app-stores > img{
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .download-app-inner{
+    /* display: none; */
+  }
+  .app-image{
+    /* position: relative; */
+    /* bottom: 0; */
+    
+  }
+}
