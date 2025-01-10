@@ -1,7 +1,6 @@
 import './our-spaces.css';
 import {
   createTheme,
-  CssBaseline,
   Switch,
   ThemeOptions,
   ThemeProvider,
@@ -48,7 +47,6 @@ const OurSpaces = () => {
 
   return (
     <>
-      <ThemeProvider theme={computedThemeOptions}>
         <div className="ourspaces-title">
           <Typography variant={itrTextWidthMobile ? 'h3' : 'h2'}>
             Our Space Overview
@@ -58,6 +56,7 @@ const OurSpaces = () => {
             <Switch checked={darkTheme.current} onChange={handleChange} />
           </div>
         </div>
+        <ThemeProvider theme={computedThemeOptions}>
         <div className="spaces-grid-container">
           <Grid
             container

@@ -105,17 +105,20 @@ export const THEME_OPTIONS: ThemeOptions = {
 export const PALETTE_OPTIONS_DARK = {
   mode: 'dark',
   primary: {
-    main: '#e6a800',
-    light: '#e6a800',
-    dark: '#ffc422',
+    main: '#b18519',
+    light: '#ffcf4b',
+    dark: '#775d12',
   },
   secondary: {
-    main: '#ffffff',
+    main: '#e0e0e0',
     light: '#f9f9f9',
-    dark: '#cec6c6',
+    dark: '#828282',
   },
   text: {
-    primary: '#263238',
-    secondary: '#65624c',
+    primary: '#000000',
+    secondary: '#000000',
+  },
+  background: {
+    paper: '#414141',
   },
 };
