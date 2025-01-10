@@ -1,4 +1,4 @@
-import { ReactElement, useState, useEffect, useMemo } from 'react';
+import { ReactElement, useState, useEffect } from 'react';
 import './App.css';
 import { AppStateProvider } from './app-theme/context/app-state-provider';
 import Header from './common-components/header';
@@ -7,7 +7,7 @@ import RootNav from './routes/root-nav';
 import DownloadApp from './common-components/downloadApp';
 import { createTheme, ThemeOptions, ThemeProvider } from '@mui/material';
 import { THEME_OPTIONS } from './constants/theme-constant';
-import { getDefaultState, getThemeOptions } from './app-theme/state-handler';
+import { getDefaultState } from './app-theme/state-handler';
 import { AppStateType } from './app-theme/types/app-state-types';
 import { initialState, updateAppState } from './app-theme/state-reducer';
 
@@ -16,21 +16,13 @@ function App(): ReactElement {
 
   useEffect(() => {
     let state = getDefaultState();
-    if (!state || !state.appTheme) {
+    if (!state) {
       return;
     }
     setDefaultState(state);
   }, []);
 
-  const computedThemeOptions = useMemo(() => {
-    if (!defaultState || !defaultState.appTheme) {
-      return THEME_OPTIONS;
-    }
-    const options = getThemeOptions(defaultState.appTheme);
-    return options;
-  }, [defaultState.appTheme]);
-
-  let appTheme: ThemeOptions = createTheme(computedThemeOptions);
+  let appTheme: ThemeOptions = createTheme(THEME_OPTIONS);
 
   return (
     <>

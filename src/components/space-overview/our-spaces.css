@@ -1,5 +1,11 @@
 .ourspaces-title {
   margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-switch{
+  display: inline;
 }
 
 .spaces-grid-container {

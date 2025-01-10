@@ -1,6 +1,6 @@
 
 import React, { useReducer } from 'react';
-import { AppThemeContext } from './app-state-context';
+import { AppStateContext } from './app-state-context';
 import { AppStateType } from '../types/app-state-types';
 
 export const AppStateProvider: React.FC<{
@@ -14,8 +14,8 @@ export const AppStateProvider: React.FC<{
   const appStateReducer = useReducer(reducer, initialState);
 
   return (
-    <AppThemeContext.Provider value={appStateReducer}>
+    <AppStateContext.Provider value={appStateReducer}>
       {children}
-    </AppThemeContext.Provider>
+    </AppStateContext.Provider>
   );
 };

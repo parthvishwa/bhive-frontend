@@ -1,4 +1,4 @@
-import { ThemeOptions } from "@mui/material";
+import { ThemeOptions } from '@mui/material';
 
 export const THEME_OPTIONS: ThemeOptions = {
   palette: {
@@ -99,5 +99,23 @@ export const THEME_OPTIONS: ThemeOptions = {
       fontWeight: '400',
       lineHeight: '19px',
     },
+  },
+};
+
+export const PALETTE_OPTIONS_DARK = {
+  mode: 'dark',
+  primary: {
+    main: '#e6a800',
+    light: '#e6a800',
+    dark: '#ffc422',
+  },
+  secondary: {
+    main: '#ffffff',
+    light: '#f9f9f9',
+    dark: '#cec6c6',
+  },
+  text: {
+    primary: '#263238',
+    secondary: '#65624c',
   },
 };

@@ -10,7 +10,7 @@ export const getDefaultState = (): AppStateType => {
 };
 
 export const getThemeOptions = (themeColor: appThemeValueType = 'light') => {
-  let themeOptions = JSON.parse(JSON.stringify(THEME_OPTIONS));
+  const themeOptions = JSON.parse(JSON.stringify(THEME_OPTIONS));
   return {
     ...themeOptions,
     palette: { ...themeOptions.palette, mode: themeColor },
