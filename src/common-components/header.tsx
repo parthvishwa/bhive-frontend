@@ -1,4 +1,4 @@
-import Brandlogo from '../assets/brandLogo.svg';
+import Brandlogo from '../assets/brandlogo.svg';
 import { IconButton } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 
