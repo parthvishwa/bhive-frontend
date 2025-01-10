@@ -5,10 +5,10 @@ import PhoneIcon from '@mui/icons-material/Phone';
 const Header = () => {
   return (
     <>
-      <div className="header">
+      <div className="header-container">
         <img className="brand-logo" src={Brandlogo} alt="brandlogo" />
         <div className="contact-us">
-          <IconButton aria-label="contactUs" >
+          <IconButton color='primary' aria-label="contactUs" >
             <PhoneIcon color="primary"/>
           </IconButton>
         </div>

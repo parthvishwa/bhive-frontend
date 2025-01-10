@@ -23,7 +23,8 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
-      "prefer-const": "off",
+      'react-hooks/exhaustive-deps': 'off',
+      'prefer-const': 'off',
     },
   },
 )

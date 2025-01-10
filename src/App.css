@@ -1,12 +1,7 @@
 .header-container {
-  width: 100%;
-}
-
-.header {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
-  border-radius: 10px;
   height: max-content;
   padding: 1% 8.3%;
 }

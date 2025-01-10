@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import coworking from '../assets/coworking.svg';
 import introvector from '../assets/introvector.svg';
 import Grid from '@mui/system/Grid';
@@ -9,7 +7,7 @@ import OurSpaces from './space-overview/our-spaces';
 const Home = () => {
   const amenities = wcData;
 
-  const itrTextWidthMobile = useMediaQuery('(max-width:900px)');
+  const isDeviceWidthSmall: boolean = useMediaQuery('(max-width:900px)');
 
   return (
     <>
@@ -18,14 +16,14 @@ const Home = () => {
           <div className="intro-text-container">
             <div className="intro-text">
               <Typography
-                variant={itrTextWidthMobile ? 'h3' : 'h1'}
-                lineHeight={itrTextWidthMobile ? '28px' : '1.1'}
+                variant={isDeviceWidthSmall ? 'h3' : 'h1'}
+                lineHeight={isDeviceWidthSmall ? '28px' : '1.1'}
               >
                 Host your meeting with world-class amenities. Starting at
                 <Typography
                   component="span"
-                  variant={itrTextWidthMobile ? 'h3' : 'h1'}
-                  lineHeight={itrTextWidthMobile ? '28px' : '1.1'}
+                  variant={isDeviceWidthSmall ? 'h3' : 'h1'}
+                  lineHeight={isDeviceWidthSmall ? '28px' : '1.1'}
                   color="primary"
                 >
                   &nbsp;₹199/-&nbsp;!
@@ -43,7 +41,7 @@ const Home = () => {
         </div>
         <div className="why-choose-us">
           <div className="why-choose-title">
-            <Typography variant={itrTextWidthMobile ? 'h3' : 'h2'}>
+            <Typography variant={isDeviceWidthSmall ? 'h3' : 'h2'}>
               Why Choose us?
             </Typography>
           </div>

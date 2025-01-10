@@ -4,7 +4,6 @@
 }
 
 .download-title {
-  margin-left: 4%;
   margin-bottom: calc(3% + var(--imgHeight) - var(--innerBoxHeight));
 }
 
