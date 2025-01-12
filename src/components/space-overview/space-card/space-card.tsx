@@ -57,7 +57,7 @@ const SpaceCard = ({
             </Typography>
           </div>
         </CardMedia>
-        <CardActions sx={{ mx: 1, gap: '20px', position: 'relative' }}>
+        <CardActions sx={{ mx: 1, gap: '10px', position: 'relative' }}>
           {passDiscounts &&
             Object.keys(passDiscounts).map((days: string) => {
               let daystobook = Number(days);

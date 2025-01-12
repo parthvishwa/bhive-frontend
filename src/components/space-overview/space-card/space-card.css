@@ -13,10 +13,6 @@
   border-radius: 5px;
 }
 
-/* .space-pass-button-cntr{
-  position: relative
-} */
-
 .space-pass-button {
   justify-content: space-between !important;
   width: 48%;

@@ -3,4 +3,3 @@ export type AppStateType = {
 }; 
 
 export type appThemeValueType = 'light' | 'dark';
-// export type ThemeStateMap

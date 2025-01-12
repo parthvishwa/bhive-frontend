@@ -43,6 +43,7 @@ const OurSpaces = () => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     DispatchAppState({ type: 'toggleTheme' });
     darkTheme.current = event.target.checked;
+    console.log('theme changed on %s', new Date().toString());
   };
 
   return (
